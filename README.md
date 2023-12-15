@@ -1,3 +1,3 @@
-MJM is a great little mail client for Atari ST but it does have this problem with Postfix SMTP. Found that out after some testing.
+MJM is a great little mail client for Atari ST but it does have a problem connecting to Postfix SMTP. Found that out after some testing.
 At the time of writing there are only a few email providers left that allow insecure connections. One is inbox.lv which is free but will spam you to death. The other is Polarismail which costs $12/year for a mail account. Inbox.lv is running Postfix and has the same problem with MJM. Polarismail is running the ancient Qmail and works fine with MJM.
 My mail server at home is running Postfix SMTP as well with the same problem. Fiddling with the settings, the best I could get is MJM connecting ca. one out of ten times. It's probably a timing issue. So I wrote my own SMTP server in 200 lines of QB64 code. It works fine with modern and ancient mail clients including Thunderbird and MJM.
